@@ -30,12 +30,29 @@ public class Maintenance {
         this.ipfsCid = ipfsCid;
     }
 
-    public String getReferenceCode() {
-        return referenceCode;
+    public String getVehiclePlate() {
+		return vehiclePlate;
+	}
+	
+    public void setVehiclePlate(String vehiclePlate) {
+    	        this.vehiclePlate = vehiclePlate;
     }
+    
+	public String getMaintenanceType() {
+		return maintenanceType;
+	}
+	
+	public void setMaintenanceType(String maintenanceType) {
+		this.maintenanceType = maintenanceType;
+	}
+
 
     public void setReferenceCode(String referenceCode) {
         this.referenceCode = referenceCode;
+    }
+    
+    public String getReferenceCode() {
+        return referenceCode;
     }
 
 }
