@@ -11,177 +11,177 @@ import jakarta.validation.constraints.NotBlank;
 public class Maintenance {
 
     @NotBlank
-    private String vehiclePlate;  
-    private String vehicleBrand;   
-    private String vehicleModel;   
-    private String vehicleKm;      
+    private String vehicle_plate;  
+    private String vehicle_brand;   
+    private String vehicle_model;   
+    private String vehicle_km;      
 
     @NotBlank
-    private Boolean engineOil;      
-    private Boolean steeringOil; 
-    private Boolean transmissionOil;   
-    private Boolean oilFilter;    
-    private Boolean airFilter;   
-    private Boolean pollenFilter;  
-    private Boolean sparkPlug;           
-    private Boolean vBelt;        
-    private Boolean timingBelt;   
-    private Boolean clutchBelt; 
-    private Boolean frontBrakePads; 
-    private Boolean rearBrakePads; 
-    private Boolean frontShockAbsorber;   
-    private Boolean rearShockAbsorber;  
+    private Boolean engine_oil;      
+    private Boolean steering_oil; 
+    private Boolean transmission_oil;   
+    private Boolean oil_filter;    
+    private Boolean air_filter;   
+    private Boolean pollen_filter;  
+    private Boolean spark_plug;           
+    private Boolean v_belt;        
+    private Boolean timing_belt;   
+    private Boolean clutch_belt; 
+    private Boolean front_brake_pads; 
+    private Boolean rear_brake_pads; 
+    private Boolean front_shock_absorber;   
+    private Boolean rear_shock_absorber;  
 
 
     @NotBlank
     private String date; 
 
-    private String ipfsCid; 
-    private String referenceCode; 
+    private String ipfscid; 
+    private String referencecode; 
 
 
-    public String getVehiclePlate() {
-        return vehiclePlate;
+    public String getVehicle_plate() {
+        return vehicle_plate;
     }
 
-    public void setVehiclePlate(String vehiclePlate) {
-        this.vehiclePlate = vehiclePlate;
+    public void setVehicle_plate(String vehicle_plate) {
+        this.vehicle_plate = vehicle_plate;
     }
 
-    public String getVehicleBrand() {
-        return vehicleBrand;
+    public String getVehicle_brand() {
+        return vehicle_brand;
     }
 
-    public void setVehicleBrand(String vehicleBrand) {
-        this.vehicleBrand = vehicleBrand;
+    public void setVehicle_brand(String vehicle_brand) {
+        this.vehicle_brand = vehicle_brand;
     }
 
-    public String getVehicleModel() {
-        return vehicleModel;
+    public String getVehicle_model() {
+        return vehicle_model;
     }
 
-    public void setVehicleModel(String vehicleModel) {
-        this.vehicleModel = vehicleModel;
+    public void setVehicle_model(String vehicle_model) {
+        this.vehicle_model = vehicle_model;
     }
 
-    public String getVehicleKm() {
-        return vehicleKm;
+    public String getVehicle_km() {
+        return vehicle_km;
     }
 
-    public void setVehicleKm(String vehicleKm) {
-        this.vehicleKm = vehicleKm;
+    public void setVehicle_km(String vehicle_km) {
+        this.vehicle_km = vehicle_km;
     }
 
-    public Boolean getEngineOil() {
-        return engineOil;
+    public Boolean getEngine_oil() {
+        return engine_oil;
     }
 
-    public void setEngineOil(Boolean engineOil) {
-        this.engineOil = engineOil;
+    public void setEngine_oil(Boolean engine_oil) {
+        this.engine_oil = engine_oil;
     }
 
-    public Boolean getSteeringOil() {
-        return steeringOil;
+    public Boolean getSteering_oil() {
+        return steering_oil;
     }
 
-    public void setSteeringOil(Boolean steeringOil) {
-        this.steeringOil = steeringOil;
+    public void setSteering_oil(Boolean steering_oil) {
+        this.steering_oil = steering_oil;
     }
 
-    public Boolean getTransmissionOil() {
-        return transmissionOil;
+    public Boolean getTransmission_oil() {
+        return transmission_oil;
     }
 
-    public void setTransmissionOil(Boolean transmissionOil) {
-        this.transmissionOil = transmissionOil;
+    public void setTransmission_oil(Boolean transmission_oil) {
+        this.transmission_oil = transmission_oil;
     }
 
-    public Boolean getOilFilter() {
-        return oilFilter;
+    public Boolean getOil_filter() {
+        return oil_filter;
     }
 
-    public void setOilFilter(Boolean oilFilter) {
-        this.oilFilter = oilFilter;
+    public void setOil_filter(Boolean oil_filter) {
+        this.oil_filter = oil_filter;
     }
 
-    public Boolean getAirFilter() {
-        return airFilter;
+    public Boolean getAir_filter() {
+        return air_filter;
     }
 
-    public void setAirFilter(Boolean airFilter) {
-        this.airFilter = airFilter;
+    public void setAir_filter(Boolean air_filter) {
+        this.air_filter = air_filter;
     }
 
-    public Boolean getPollenFilter() {
-        return pollenFilter;
+    public Boolean getPollen_filter() {
+        return pollen_filter;
     }
 
-    public void setPollenFilter(Boolean pollenFilter) {
-        this.pollenFilter = pollenFilter;
+    public void setPollen_filter(Boolean pollen_filter) {
+        this.pollen_filter = pollen_filter;
     }
 
-    public Boolean getSparkPlug() {
-        return sparkPlug;
+    public Boolean getSpark_plug() {
+        return spark_plug;
     }
 
-    public void setSparkPlug(Boolean sparkPlug) {
-        this.sparkPlug = sparkPlug;
+    public void setSpark_plug(Boolean spark_plug) {
+        this.spark_plug = spark_plug;
     }
 
-    public Boolean getVBelt() {
-        return vBelt;
+    public Boolean getV_belt() {
+        return v_belt;
     }
 
-    public void setVBelt(Boolean vBelt) {
-        this.vBelt = vBelt;
+    public void setV_belt(Boolean v_belt) {
+        this.v_belt = v_belt;
     }
 
-    public Boolean getTimingBelt() {
-        return timingBelt;
+    public Boolean getTiming_belt() {
+        return timing_belt;
     }
 
-    public void setTimingBelt(Boolean timingBelt) {
-        this.timingBelt = timingBelt;
+    public void setTiming_belt(Boolean timing_belt) {
+        this.timing_belt = timing_belt;
     }
 
-    public Boolean getClutchBelt() {
-        return clutchBelt;
+    public Boolean getClutch_belt() {
+        return clutch_belt;
     }
 
-    public void setClutchBelt(Boolean clutchBelt) {
-        this.clutchBelt = clutchBelt;
+    public void setClutch_belt(Boolean clutch_belt) {
+        this.clutch_belt = clutch_belt;
     }
 
-    public Boolean getFrontBrakePads() {
-        return frontBrakePads;
+    public Boolean getFront_brake_pads() {
+        return front_brake_pads;
     }
 
-    public void setFrontBrakePads(Boolean frontBrakePads) {
-        this.frontBrakePads = frontBrakePads;
+    public void setFront_brake_pads(Boolean front_brake_pads) {
+        this.front_brake_pads = front_brake_pads;
     }
 
-    public Boolean getRearBrakePads() {
-        return rearBrakePads;
+    public Boolean getRear_brake_pads() {
+        return rear_brake_pads;
     }
 
-    public void setRearBrakePads(Boolean rearBrakePads) {
-        this.rearBrakePads = rearBrakePads;
+    public void setRear_brake_pads(Boolean rear_brake_pads) {
+        this.rear_brake_pads = rear_brake_pads;
     }
 
-    public Boolean getFrontShockAbsorber() {
-        return frontShockAbsorber;
+    public Boolean getFront_shock_absorber() {
+        return front_shock_absorber;
     }
 
-    public void setFrontShockAbsorber(Boolean frontShockAbsorber) {
-        this.frontShockAbsorber = frontShockAbsorber;
+    public void setFront_shock_absorber(Boolean front_shock_absorber) {
+        this.front_shock_absorber = front_shock_absorber;
     }
 
-    public Boolean getRearShockAbsorber() {
-        return rearShockAbsorber;
+    public Boolean getRear_shock_absorber() {
+        return rear_shock_absorber;
     }
 
-    public void setRearShockAbsorber(Boolean rearShockAbsorber) {
-        this.rearShockAbsorber = rearShockAbsorber;
+    public void setRear_shock_absorber(Boolean rear_shock_absorber) {
+        this.rear_shock_absorber = rear_shock_absorber;
     }
 
 
@@ -192,20 +192,20 @@ public class Maintenance {
     public void setDate(String date) {
         this.date = date;
     }
-
+    
     public String getIpfsCid() {
-        return ipfsCid;
+        return ipfscid;
     }
 
-    public void setIpfsCid(String ipfsCid) {
-        this.ipfsCid = ipfsCid;
+    public void setIpfsCid(String ipfs_cid) {
+        this.ipfscid = ipfs_cid;
     }
 
     public String getReferenceCode() {
-        return referenceCode;
+        return referencecode;
     }
 
-    public void setReferenceCode(String referenceCode) {
-        this.referenceCode = referenceCode;
+    public void setReferenceCode(String reference_code) {
+        this.referencecode = reference_code;
     }
 }
