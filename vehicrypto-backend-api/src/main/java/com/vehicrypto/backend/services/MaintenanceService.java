@@ -29,34 +29,32 @@ public class MaintenanceService {
             MerkleNode response = ipfs.add(file).get(0);
             String ipfsCid = response.hash.toString();
 
-            String referenceCode = "REF-" + System.currentTimeMillis();
             maintenance.setIpfsCid(ipfsCid);
-            maintenance.setReferenceCode(referenceCode);
 
-            blockchainMockDB.put(referenceCode, maintenance);
+            blockchainMockDB.put(ipfsCid, maintenance);
 
-            return referenceCode;
+            return ipfsCid;
         } catch (Exception e) {
             throw new RuntimeException("Error adding maintenance record: " + e.getMessage());
         }
     }
     
-    public List<String> getReferenceCodes(String vehicle_plate) {
-        List<String> referenceCodes = new ArrayList<>();
+    public List<String> getIpfsCodes(String vehicle_plate) {
+        List<String> ipfsCodes = new ArrayList<>();
 
         for (Map.Entry<String, Maintenance> entry : blockchainMockDB.entrySet()) {
             if (entry.getValue().getVehicle_plate().equals(vehicle_plate)) {
-                referenceCodes.add(entry.getKey());
+            	ipfsCodes.add(entry.getKey());
             }
         }
 
-        return referenceCodes;
+        return ipfsCodes;
     }
 
-    public Maintenance getMaintenanceRecord(String referenceCode) {
-        if (!blockchainMockDB.containsKey(referenceCode)) {
+    public Maintenance getMaintenanceRecord(String ipfsCode) {
+        if (!blockchainMockDB.containsKey(ipfsCode)) {
             throw new RuntimeException("Record not found!");
         }
-        return blockchainMockDB.get(referenceCode);
+        return blockchainMockDB.get(ipfsCode);
     }
 }

@@ -19,18 +19,18 @@ public class MaintenanceController {
 
     @PostMapping("/add")
     public ResponseEntity<?> addMaintenance(@RequestBody Maintenance maintenance) {
-        String referenceCode = service.addMaintenanceRecord(maintenance);
-        return ResponseEntity.ok(Map.of("referenceCode", referenceCode));
+        String ipfsCid = service.addMaintenanceRecord(maintenance);
+        return ResponseEntity.ok(Map.of("ipfsCid", ipfsCid));
     }
     
     @GetMapping("/getList/{vehicle_plate}")
-	public ResponseEntity<?> getReferenceCodes(@PathVariable String vehicle_plate) {
-    	        return ResponseEntity.ok(service.getReferenceCodes(vehicle_plate));
+	public ResponseEntity<?> getIpfsCodes(@PathVariable String vehicle_plate) {
+    	        return ResponseEntity.ok(service.getIpfsCodes(vehicle_plate));
     }
 	
-    @GetMapping("/get/{referenceCode}")
-    public ResponseEntity<?> getMaintenance(@PathVariable String referenceCode) {
-        Maintenance record = service.getMaintenanceRecord(referenceCode);
+    @GetMapping("/get/{ipfsCid}")
+    public ResponseEntity<?> getMaintenance(@PathVariable String ipfsCid) {
+        Maintenance record = service.getMaintenanceRecord(ipfsCid);
         return ResponseEntity.ok(record);
     }
 }
