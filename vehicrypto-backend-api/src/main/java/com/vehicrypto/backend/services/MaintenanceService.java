@@ -1,5 +1,6 @@
 package com.vehicrypto.backend.services;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.vehicrypto.backend.models.Maintenance;
 import io.ipfs.api.IPFS;
 import io.ipfs.api.MerkleNode;
@@ -25,10 +26,13 @@ public class MaintenanceService {
 
     public String addMaintenanceRecord(Maintenance maintenance) {
         try {
-            NamedStreamable.ByteArrayWrapper file = new NamedStreamable.ByteArrayWrapper(maintenance.toString().getBytes());
-            MerkleNode response = ipfs.add(file).get(0);
-            String ipfsCid = response.hash.toString();
+            ObjectMapper objectMapper = new ObjectMapper();
+            String jsonData = objectMapper.writeValueAsString(maintenance);
 
+            NamedStreamable.ByteArrayWrapper file = new NamedStreamable.ByteArrayWrapper(jsonData.getBytes());
+            MerkleNode response = ipfs.add(file).get(0);
+
+            String ipfsCid = response.hash.toString();
             maintenance.setIpfsCid(ipfsCid);
 
             blockchainMockDB.put(ipfsCid, maintenance);
