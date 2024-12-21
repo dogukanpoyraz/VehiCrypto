@@ -10,30 +10,29 @@ import org.web3j.protocol.core.methods.request.Transaction;
 import org.web3j.protocol.http.HttpService;
 
 import java.math.BigInteger;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Service
 public class MaintenanceService {
 
     private final IPFS ipfs = new IPFS("/ip4/127.0.0.1/tcp/5001");
-    private final Web3j web3j = Web3j.build(new HttpService("http://localhost:8545")); // Ethereum node URL
+    private final Web3j web3j = Web3j.build(new HttpService("http://localhost:8545")); 
 
-    private final Map<String, Maintenance> blockchainMockDB = new HashMap<>(); // Mock DB for blockchain records
+    private final Map<String, Maintenance> blockchainMockDB = new HashMap<>(); 
 
     public String addMaintenanceRecord(Maintenance maintenance) {
         try {
-            // Upload file to IPFS
             NamedStreamable.ByteArrayWrapper file = new NamedStreamable.ByteArrayWrapper(maintenance.toString().getBytes());
             MerkleNode response = ipfs.add(file).get(0);
             String ipfsCid = response.hash.toString();
 
-            // Generate mock reference code
             String referenceCode = "REF-" + System.currentTimeMillis();
             maintenance.setIpfsCid(ipfsCid);
             maintenance.setReferenceCode(referenceCode);
 
-            // Store mock record (replace with smart contract call via Web3J)
             blockchainMockDB.put(referenceCode, maintenance);
 
             return referenceCode;
@@ -41,9 +40,20 @@ public class MaintenanceService {
             throw new RuntimeException("Error adding maintenance record: " + e.getMessage());
         }
     }
+    
+    public List<String> getReferenceCodes(String vehicle_plate) {
+        List<String> referenceCodes = new ArrayList<>();
+
+        for (Map.Entry<String, Maintenance> entry : blockchainMockDB.entrySet()) {
+            if (entry.getValue().getVehicle_plate().equals(vehicle_plate)) {
+                referenceCodes.add(entry.getKey());
+            }
+        }
+
+        return referenceCodes;
+    }
 
     public Maintenance getMaintenanceRecord(String referenceCode) {
-        // Fetch record (replace with blockchain query via Web3J)
         if (!blockchainMockDB.containsKey(referenceCode)) {
             throw new RuntimeException("Record not found!");
         }

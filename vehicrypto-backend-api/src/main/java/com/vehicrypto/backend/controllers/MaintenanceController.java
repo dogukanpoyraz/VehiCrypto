@@ -22,7 +22,12 @@ public class MaintenanceController {
         String referenceCode = service.addMaintenanceRecord(maintenance);
         return ResponseEntity.ok(Map.of("referenceCode", referenceCode));
     }
-
+    
+    @GetMapping("/getList/{vehicle_plate}")
+	public ResponseEntity<?> getReferenceCodes(@PathVariable String vehicle_plate) {
+    	        return ResponseEntity.ok(service.getReferenceCodes(vehicle_plate));
+    }
+	
     @GetMapping("/get/{referenceCode}")
     public ResponseEntity<?> getMaintenance(@PathVariable String referenceCode) {
         Maintenance record = service.getMaintenanceRecord(referenceCode);

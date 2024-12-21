@@ -36,8 +36,8 @@ public class Maintenance {
     @NotBlank
     private String date; 
 
-    private String ipfscid; 
-    private String referencecode; 
+    private String ipfsCid; 
+    private String referenceCodes; 
 
 
     public String getVehicle_plate() {
@@ -194,18 +194,18 @@ public class Maintenance {
     }
     
     public String getIpfsCid() {
-        return ipfscid;
+        return ipfsCid;
     }
 
     public void setIpfsCid(String ipfs_cid) {
-        this.ipfscid = ipfs_cid;
+        this.ipfsCid = ipfs_cid;
     }
 
     public String getReferenceCode() {
-        return referencecode;
+        return referenceCodes;
     }
 
     public void setReferenceCode(String reference_code) {
-        this.referencecode = reference_code;
+        this.referenceCodes = reference_code;
     }
 }
