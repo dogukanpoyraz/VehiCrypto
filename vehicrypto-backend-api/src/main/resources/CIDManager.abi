@@ -1,0 +1,51 @@
+[
+		{
+			"inputs": [
+				{
+					"internalType": "string",
+					"name": "_vehiclePlate",
+					"type": "string"
+				},
+				{
+					"internalType": "string",
+					"name": "_ipfsCID",
+					"type": "string"
+				}
+			],
+			"name": "addCID",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_owner",
+					"type": "address"
+				}
+			],
+			"name": "getCIDs",
+			"outputs": [
+				{
+					"components": [
+						{
+							"internalType": "string",
+							"name": "vehiclePlate",
+							"type": "string"
+						},
+						{
+							"internalType": "string",
+							"name": "ipfsCID",
+							"type": "string"
+						}
+					],
+					"internalType": "struct CIDManager.CIDInfo[]",
+					"name": "",
+					"type": "tuple[]"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		}
+	]
