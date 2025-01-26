@@ -26,6 +26,7 @@ Traditional vehicle maintenance tracking relies on **centralized databases and p
 
 ### Our Solution
 VehiCrypto provides a **secure, immutable, and verifiable** maintenance record system by:
+
 ✅ **Using blockchain to ensure tamper-proof records**  
 ✅ **Storing maintenance documents on IPFS for cost-efficient decentralized storage**  
 ✅ **Offering a Flutter-based mobile app for seamless user experience**  
