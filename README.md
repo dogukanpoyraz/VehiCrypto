@@ -115,8 +115,3 @@ VehiCrypto provides a **secure, immutable, and verifiable** maintenance record s
 
 ```plaintext
 User ➝ Flutter App ➝ Backend (Java) ➝ Smart Contract (Solidity) ➝ Blockchain (Ethereum) ➝ IPFS Storage
-
-
-
-
-
