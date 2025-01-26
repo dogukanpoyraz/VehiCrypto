@@ -12,11 +12,12 @@ This project is a simple reflex-based game called *Push and Perish, developed us
   - After determining a winner, the game waits 3 seconds and restarts automatically.
 
 ## Team Members
-| Name - Surname | Student Number |  Github Account | Department |
-| -------------- | -------------- | --------------- | ---------- |
-| Arda YILDIZ       | 202111071 | [29ardayildiz](https://github.com/29ardayildiz) | CENG |
-| Çağdaş GÜLEÇ       | 202111004 | [Cagdas-Gulec](https://github.com/Cagdas-Gulec) | CENG |
-| Doğukan POYRAZ          | 202111061 | [dogukanpoyraz](https://github.com/dogukanpoyraz)       | CENG |
+| Name - Surname |  Github Account | Department |
+| -------------- | --------------- | ---------- |
+| Arda YILDIZ      | [29ardayildiz](https://github.com/29ardayildiz) | CENG |
+| Çağdaş GÜLEÇ      | [Cagdas-Gulec](https://github.com/Cagdas-Gulec) | CENG |
+| Doğukan POYRAZ         | [dogukanpoyraz](https://github.com/dogukanpoyraz)       | CENG |
+| Salih Barkın AKKAYA         | [dogukanpoyraz](https://github.com/dogukanpoyraz)       | CENG |
 
 ## Documents 
 - [Project Report](https://github.com/dogukanpoyraz/VehiCrypto/blob/main/Documents/VehiCrypto_Report.pdf)
