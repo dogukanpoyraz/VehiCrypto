@@ -2,6 +2,17 @@
 
 VehiCrypto is an innovative blockchain-based vehicle maintenance tracking application designed to enhance transparency, security, and efficiency in vehicle service records. This project leverages **blockchain, IPFS, Java, and Flutter** to create a **tamper-proof, decentralized, and user-friendly system** for both vehicle owners and service providers.
 
+## Team Members
+| Name - Surname |  Github Account | Department |
+| -------------- | --------------- | ---------- |
+| Arda YILDIZ      | [29ardayildiz](https://github.com/29ardayildiz) | CENG |
+| Çağdaş GÜLEÇ      | [Cagdas-Gulec](https://github.com/Cagdas-Gulec) | CENG |
+| Doğukan POYRAZ         | [dogukanpoyraz](https://github.com/dogukanpoyraz)       | CENG |
+| Salih Barkın AKKAYA         | [barkin06](https://github.com/barkin06)       | CENG |
+
+## Documents 
+- [Project Report](https://github.com/dogukanpoyraz/VehiCrypto/blob/main/Documents/VehiCrypto_Report.pdf)
+
 ---
 
 ## 🚀 Project Overview
@@ -72,15 +83,6 @@ VehiCrypto provides a **secure, immutable, and verifiable** maintenance record s
 User ➝ Flutter App ➝ Backend (Java) ➝ Smart Contract (Solidity) ➝ Blockchain (Ethereum) ➝ IPFS Storage
 
 
-## Team Members
-| Name - Surname |  Github Account | Department |
-| -------------- | --------------- | ---------- |
-| Arda YILDIZ      | [29ardayildiz](https://github.com/29ardayildiz) | CENG |
-| Çağdaş GÜLEÇ      | [Cagdas-Gulec](https://github.com/Cagdas-Gulec) | CENG |
-| Doğukan POYRAZ         | [dogukanpoyraz](https://github.com/dogukanpoyraz)       | CENG |
-| Salih Barkın AKKAYA         | [dogukanpoyraz](https://github.com/dogukanpoyraz)       | CENG |
 
-## Documents 
-- [Project Report](https://github.com/dogukanpoyraz/VehiCrypto/blob/main/Documents/VehiCrypto_Report.pdf)
 
 
